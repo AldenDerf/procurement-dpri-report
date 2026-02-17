@@ -45,6 +45,48 @@ function normalizeDate(value: unknown): string | null {
   return null;
 }
 
+function normalizeMoney(value: unknown): number | null {
+  if (value == null || value === "") return null;
+  const numeric = Number(value);
+  if (!Number.isFinite(numeric)) return numeric;
+  return Math.round(numeric * 100) / 100;
+}
+
+function cleanText(value: unknown): string | null {
+  if (value == null) return null;
+  const text = String(value).trim();
+  return text === "" ? null : text;
+}
+
+function splitGenericAndBrand(
+  rawGeneric: unknown,
+  rawBrand: unknown,
+): { genericName: string | null; brandName: string | null } {
+  const explicitBrand = cleanText(rawBrand);
+  const genericText = cleanText(rawGeneric);
+
+  if (!genericText) {
+    return { genericName: null, brandName: explicitBrand };
+  }
+
+  // Common source format: Generic description with brand wrapped in quotes at the end.
+  const quotedBrandMatch = genericText.match(/"(.*?)"\s*$/);
+  if (!explicitBrand && quotedBrandMatch?.[1]) {
+    const brandName = quotedBrandMatch[1].trim();
+    const genericName = genericText
+      .slice(0, quotedBrandMatch.index)
+      .replace(/[,\s]+$/, "")
+      .trim();
+
+    return {
+      genericName: genericName || null,
+      brandName: brandName || null,
+    };
+  }
+
+  return { genericName: genericText, brandName: explicitBrand };
+}
+
 export async function POST(req: Request) {
   const form = await req.formData();
   const file = form.get("file");
@@ -75,6 +117,10 @@ export async function POST(req: Request) {
   const mapped = rawRows
     .filter((r) => Object.keys(r).length > 0)
     .map((r) => {
+      const splitNames = splitGenericAndBrand(
+        get(r, "Generic Name of Medicine with Strength Dosage / Form"),
+        get(r, "Brand Name"),
+      );
       const poNumber = String(get(r, "PO Number") ?? "").trim();
       const itemNoVal =
         get(r, "Item No") ?? get(r, "item_no") ?? get(r, "Item") ?? null;
@@ -90,20 +136,13 @@ export async function POST(req: Request) {
         supplier: get(r, "Supplier"),
         modeOfProcurement: get(r, "Mode of Procurement"),
 
-        genericName: get(
-          r,
-          "Generic Name of Medicine with Strength Dosage / Form",
-        ),
-        acquisitionCost:
-          get(r, "Acquisition Cost") == null
-            ? null
-            : Number(get(r, "Acquisition Cost")),
+        genericName: splitNames.genericName,
+        acquisitionCost: normalizeMoney(get(r, "Acquisition Cost")),
         quantity:
           get(r, "Quantity") == null ? null : Number(get(r, "Quantity")),
-        totalCost:
-          get(r, "Total Cost") == null ? null : Number(get(r, "Total Cost")),
+        totalCost: normalizeMoney(get(r, "Total Cost")),
 
-        brandName: get(r, "Brand Name"),
+        brandName: splitNames.brandName,
         manufacturer: get(r, "Manufacturer"),
         deliveryStatus: get(r, "Delivery Status"),
         bidAttempt:
