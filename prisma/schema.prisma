@@ -1,0 +1,42 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model ProcuredMed {
+  id                Int      @id @default(autoincrement())
+
+  poNumber          String   @map("po_number")
+  itemNo            Int      @map("item_no")
+
+  poDate            DateTime? @map("po_date")
+  supplier          String?  @map("supplier")
+  modeOfProcurement String?  @map("mode_of_procurement")
+
+  genericName       String?  @map("generic_name")
+  acquisitionCost   Decimal? @map("acquisition_cost")
+  quantity          Int?     @map("quantity")
+  totalCost         Decimal? @map("total_cost")
+
+  brandName         String?  @map("brand_name")
+  manufacturer      String?  @map("manufacturer")
+  deliveryStatus    String?  @map("delivery_status")
+  bidAttempt        Int?     @map("bid_attempt")
+
+  createdAt         DateTime @default(now()) @map("created_at")
+  updatedAt         DateTime @updatedAt @map("updated_at")
+
+  @@unique([poNumber, itemNo], name: "unique_po_item")
+  @@map("procured_meds")
+}
+
