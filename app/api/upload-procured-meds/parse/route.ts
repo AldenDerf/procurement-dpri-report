@@ -69,6 +69,19 @@ function splitGenericAndBrand(
     return { genericName: null, brandName: explicitBrand };
   }
 
+  // If Brand Name column is populated, trust it and strip quoted notes/brands
+  // from generic text to avoid duplicating brand info.
+  if (explicitBrand) {
+    const genericWithoutQuotes = genericText
+      .replace(/"[^"]*"/g, "")
+      .replace(/[,\s]+$/, "")
+      .trim();
+    return {
+      genericName: genericWithoutQuotes || null,
+      brandName: explicitBrand,
+    };
+  }
+
   // Common source format: Generic description with brand wrapped in quotes at the end.
   const quotedBrandMatch = genericText.match(/"(.*?)"\s*$/);
   if (!explicitBrand && quotedBrandMatch?.[1]) {
@@ -119,7 +132,7 @@ export async function POST(req: Request) {
     .map((r) => {
       const splitNames = splitGenericAndBrand(
         get(r, "Generic Name of Medicine with Strength Dosage / Form"),
-        get(r, "Brand Name"),
+        get(r, "Brand Name") ?? get(r, "Brand"),
       );
       const poNumber = String(get(r, "PO Number") ?? "").trim();
       const itemNoVal =
