@@ -5,8 +5,8 @@
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 generator client {
-  provider = "prisma-client-js"
-  output   = "../app/generated/prisma"
+  provider   = "prisma-client-js"
+  output     = "../app/generated/prisma"
   engineType = "binary"
 }
 
@@ -15,28 +15,51 @@ datasource db {
 }
 
 model ProcuredMed {
-  id                Int      @id @default(autoincrement())
+  id Int @id @default(autoincrement())
 
-  poNumber          String   @map("po_number")
-  itemNo            Int      @map("item_no")
+  poNumber String @map("po_number")
+  itemNo   Int    @map("item_no")
 
   poDate            DateTime? @map("po_date")
-  supplier          String?  @map("supplier")
-  modeOfProcurement String?  @map("mode_of_procurement")
+  supplier          String?   @map("supplier") @db.VarChar(255)
+  modeOfProcurement String?   @map("mode_of_procurement")
 
-  genericName       String?  @map("generic_name")
-  acquisitionCost   Decimal? @map("acquisition_cost")
-  quantity          Int?     @map("quantity")
-  totalCost         Decimal? @map("total_cost")
+  genericName     String?  @map("generic_name") @db.VarChar(255)
+  acquisitionCost Decimal? @map("acquisition_cost") @db.Decimal(15, 2)
+  quantity        Int?     @map("quantity")
+  totalCost       Decimal? @map("total_cost") @db.Decimal(15, 2)
 
-  brandName         String?  @map("brand_name")
-  manufacturer      String?  @map("manufacturer")
-  deliveryStatus    String?  @map("delivery_status")
-  bidAttempt        Int?     @map("bid_attempt")
+  brandName      String? @map("brand_name") @db.VarChar(255)
+  manufacturer   String? @map("manufacturer") @db.VarChar(255)
+  deliveryStatus String? @map("delivery_status")
+  bidAttempt     Int?    @map("bid_attempt")
 
-  createdAt         DateTime @default(now()) @map("created_at")
-  updatedAt         DateTime @updatedAt @map("updated_at")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
 
   @@unique([poNumber, itemNo], name: "unique_po_item")
   @@map("procured_meds")
+}
+
+model Iar {
+  id               Int      @id @default(autoincrement())
+  iarNumber        String   @map("iar_number")
+  dateOfInspection DateTime @map("date_of_inspection")
+
+  poNumber   String @map("po_number")
+  itemNumber Int    @map("item_number")
+
+  requisitioningOffice String?   @map("requisitioning_office")
+  brand                String?   @map("brand")
+  batchLotNumber       String?   @map("batch_lot_number")
+  expirationDate       DateTime? @map("expiration_date")
+  inspectedQuantity    Int       @map("inspected_quantity")
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@unique([iarNumber, poNumber, itemNumber], name: "unique_iar_po_item")
+  @@index([poNumber, itemNumber], name: "idx_iar_po_item")
+  @@index([iarNumber], name: "idx_iar_number")
+  @@map("iar")
 }
