@@ -166,7 +166,7 @@ export default async function PoDetailsPage({
         <h3 className="text-lg font-semibold text-slate-900">{title}</h3>
         <p className="text-sm text-slate-600">{data.length} item(s)</p>
       </div>
-      <div className="max-h-[360px] overflow-auto">
+      <div className="h-[360px] overflow-x-auto overflow-y-auto">
         <table className="min-w-[1300px] w-full border-collapse text-left text-sm">
           <thead className="sticky top-0 z-10 bg-slate-100 text-xs uppercase tracking-wide text-slate-600">
             <tr>
