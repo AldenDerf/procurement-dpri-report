@@ -1,4 +1,6 @@
+import Link from "next/link";
 import ListsOfPOs from "@/app/ui/dashboard/lists-of-pos";
+import ListOfIars from "@/app/ui/dashboard/list-of-iars";
 
 export default function DashboardPage() {
   return (
@@ -11,9 +13,24 @@ export default function DashboardPage() {
           <p className="mt-2 text-sm text-slate-600">
             Unique PO list with computed completion status.
           </p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            <Link
+              href="/upload-iar"
+              className="inline-flex items-center rounded-lg bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800"
+            >
+              Upload IAR
+            </Link>
+            <Link
+              href="/upload-procured-meds"
+              className="inline-flex items-center rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-800 transition hover:bg-slate-100"
+            >
+              Upload Procured Medicine
+            </Link>
+          </div>
         </section>
 
         <ListsOfPOs />
+        <ListOfIars />
       </div>
     </main>
   );

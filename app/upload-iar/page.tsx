@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 type Row = {
   iarNumber: string;
@@ -24,6 +25,7 @@ type CommitLog = {
 };
 
 export default function UploadIarPage() {
+  const router = useRouter();
   const [file, setFile] = useState<File | null>(null);
   const [preview, setPreview] = useState<Row[]>([]);
   const [allRows, setAllRows] = useState<Row[]>([]);
@@ -32,6 +34,9 @@ export default function UploadIarPage() {
   const [isParsing, setIsParsing] = useState(false);
   const [isCommitting, setIsCommitting] = useState(false);
   const [commitLogs, setCommitLogs] = useState<CommitLog[]>([]);
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [insertedCount, setInsertedCount] = useState(0);
+  const [skippedCount, setSkippedCount] = useState(0);
 
   const parseFile = async (selectedFile?: File) => {
     const fileToParse = selectedFile ?? file;
@@ -43,6 +48,9 @@ export default function UploadIarPage() {
     setPreview([]);
     setAllRows([]);
     setCommitLogs([]);
+    setShowSuccessModal(false);
+    setInsertedCount(0);
+    setSkippedCount(0);
 
     try {
       const fd = new FormData();
@@ -87,7 +95,7 @@ export default function UploadIarPage() {
       });
 
       const text = await res.text();
-      let json: { error?: unknown; message?: unknown } | null = null;
+      let json: { [key: string]: unknown } | null = null;
       try {
         json = text ? JSON.parse(text) : null;
       } catch {
@@ -102,10 +110,15 @@ export default function UploadIarPage() {
         return;
       }
 
-      setCommitLogs(json.logs ?? []);
-      setStatus(
-        `Done. Inserted: ${json.insertedCount}, Skipped duplicates: ${json.skippedDuplicates}`,
-      );
+      const logs = Array.isArray(json?.logs) ? (json.logs as CommitLog[]) : [];
+      const inserted = Number(json?.insertedCount ?? 0);
+      const skipped = Number(json?.skippedDuplicates ?? 0);
+
+      setCommitLogs(logs);
+      setInsertedCount(inserted);
+      setSkippedCount(skipped);
+      setShowSuccessModal(inserted > 0);
+      setStatus(`Done. Inserted: ${inserted}, Skipped duplicates: ${skipped}`);
     } catch {
       setStatus("Insert failed. Please try again.");
     } finally {
@@ -115,6 +128,68 @@ export default function UploadIarPage() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 px-4 py-10 text-slate-900 sm:px-6 lg:px-8">
+      {showSuccessModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/45 px-4">
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="upload-success-title"
+            className="w-full max-w-3xl overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xl"
+          >
+            <div className="border-b border-slate-200 px-5 py-4">
+              <h2 id="upload-success-title" className="text-lg font-semibold text-slate-900">
+                IAR Upload Result
+              </h2>
+              <p className="mt-1 text-sm text-slate-600">
+                Inserted: {insertedCount}, Skipped: {skippedCount}
+              </p>
+            </div>
+
+            <div className="max-h-[55vh] overflow-auto px-5 py-4">
+              <table className="min-w-full border-collapse text-left text-sm">
+                <thead className="sticky top-0 bg-slate-100 text-xs uppercase tracking-wide text-slate-600">
+                  <tr>
+                    <th className="px-3 py-2 font-semibold">IAR No</th>
+                    <th className="px-3 py-2 font-semibold">PO Number</th>
+                    <th className="px-3 py-2 font-semibold">Item Number</th>
+                    <th className="px-3 py-2 font-semibold">Result</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100">
+                  {commitLogs
+                    .filter((log) => log.result === "inserted")
+                    .map((log, idx) => (
+                      <tr key={`${log.iarNumber}-${log.poNumber}-${log.itemNumber}-${idx}`}>
+                        <td className="px-3 py-2">{log.iarNumber}</td>
+                        <td className="px-3 py-2">{log.poNumber}</td>
+                        <td className="px-3 py-2">{log.itemNumber}</td>
+                        <td className="px-3 py-2">
+                          <span className="inline-flex rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-medium text-emerald-700">
+                            inserted
+                          </span>
+                        </td>
+                      </tr>
+                    ))}
+                </tbody>
+              </table>
+            </div>
+
+            <div className="flex justify-end border-t border-slate-200 px-5 py-3">
+              <button
+                type="button"
+                onClick={() => {
+                  setShowSuccessModal(false);
+                  router.push("/dashboard");
+                }}
+                className="inline-flex min-w-24 items-center justify-center rounded-lg bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800"
+              >
+                OK
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="mx-auto w-full max-w-7xl space-y-6">
         <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
           <div className="mb-6 flex flex-wrap items-start justify-between gap-4">
@@ -148,6 +223,9 @@ export default function UploadIarPage() {
                     setPreview([]);
                     setAllRows([]);
                     setCommitLogs([]);
+                    setShowSuccessModal(false);
+                    setInsertedCount(0);
+                    setSkippedCount(0);
                   }
                 }}
               />
