@@ -129,12 +129,14 @@ export default function UploadIarPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 px-4 py-10 text-slate-900 sm:px-6 lg:px-8">
       {showSuccessModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/45 px-4">
-          <div
-            role="dialog"
-            aria-modal="true"
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/55 backdrop-blur-sm px-4 py-6">
+          <dialog
+            open
             aria-labelledby="upload-success-title"
-            className="w-full max-w-3xl overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xl"
+            className="m-0 w-full max-w-3xl max-h-[85vh] overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xl"
+            onCancel={(event) => {
+              event.preventDefault();
+            }}
           >
             <div className="border-b border-slate-200 px-5 py-4">
               <h2 id="upload-success-title" className="text-lg font-semibold text-slate-900">
@@ -145,7 +147,7 @@ export default function UploadIarPage() {
               </p>
             </div>
 
-            <div className="max-h-[55vh] overflow-auto px-5 py-4">
+            <div className="max-h-[65vh] overflow-auto px-5 py-4">
               <table className="min-w-full border-collapse text-left text-sm">
                 <thead className="sticky top-0 bg-slate-100 text-xs uppercase tracking-wide text-slate-600">
                   <tr>
@@ -186,7 +188,7 @@ export default function UploadIarPage() {
                 OK
               </button>
             </div>
-          </div>
+          </dialog>
         </div>
       )}
 

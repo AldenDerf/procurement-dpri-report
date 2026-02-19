@@ -4,6 +4,7 @@ type IarSummary = {
   iarNumber: string;
   dateOfInspection: Date | null;
   poNumber: string;
+  createdAt: Date | null;
 };
 
 function formatDate(value: Date | null): string {
@@ -24,8 +25,9 @@ export default async function ListOfIars() {
             iarNumber: true;
             dateOfInspection: true;
             poNumber: true;
+            createdAt: true;
           };
-          orderBy: Array<{ dateOfInspection: "desc" } | { iarNumber: "asc" }>;
+          orderBy: Array<{ createdAt: "desc" } | { iarNumber: "asc" }>;
         }) => Promise<IarSummary[]>;
       };
     }
@@ -37,16 +39,18 @@ export default async function ListOfIars() {
           iarNumber: true,
           dateOfInspection: true,
           poNumber: true,
+          createdAt: true,
         },
-        orderBy: [{ dateOfInspection: "desc" }, { iarNumber: "asc" }],
+        orderBy: [{ createdAt: "desc" }, { iarNumber: "asc" }],
       })
     : await prisma.$queryRaw<IarSummary[]>`
         SELECT
           iar_number AS iarNumber,
           date_of_inspection AS dateOfInspection,
-          po_number AS poNumber
+          po_number AS poNumber,
+          created_at AS createdAt
         FROM iar
-        ORDER BY date_of_inspection DESC, iar_number ASC
+        ORDER BY created_at DESC, iar_number ASC
       `;
 
   const seenIars = new Set<string>();
@@ -67,10 +71,11 @@ export default async function ListOfIars() {
         <div className="p-6 text-sm text-slate-600">No IAR records found.</div>
       ) : (
         <div className="overflow-x-auto">
-          <table className="min-w-[700px] w-full border-collapse text-left text-sm">
+          <table className="min-w-[860px] w-full border-collapse text-left text-sm">
             <thead className="bg-slate-100 text-xs uppercase tracking-wide text-slate-600">
               <tr>
                 <th className="px-4 py-3 font-semibold">IAR Number</th>
+                <th className="px-4 py-3 font-semibold">Date Inserted</th>
                 <th className="px-4 py-3 font-semibold">Inspection Date</th>
                 <th className="px-4 py-3 font-semibold">PO Number</th>
               </tr>
@@ -79,6 +84,7 @@ export default async function ListOfIars() {
               {uniqueRows.map((row, idx) => (
                 <tr key={`${row.iarNumber}-${row.poNumber}-${idx}`} className="hover:bg-slate-50">
                   <td className="px-4 py-3 text-slate-900">{row.iarNumber}</td>
+                  <td className="px-4 py-3 text-slate-700">{formatDate(row.createdAt)}</td>
                   <td className="px-4 py-3 text-slate-700">
                     {formatDate(row.dateOfInspection)}
                   </td>
