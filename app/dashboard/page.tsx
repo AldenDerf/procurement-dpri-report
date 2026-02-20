@@ -26,6 +26,12 @@ export default function DashboardPage() {
             >
               Upload Procured Medicine
             </Link>
+            <Link
+              href="/manual-procured-meds"
+              className="inline-flex items-center rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-800 transition hover:bg-slate-100"
+            >
+              Manual Insert
+            </Link>
           </div>
         </section>
 

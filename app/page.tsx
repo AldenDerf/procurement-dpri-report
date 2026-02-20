@@ -1,4 +1,13 @@
 import ListsOfPOs from "@/app/ui/dashboard/lists-of-pos";
+import Link from "next/link";
+
+const appRoutes = [
+  { href: "/", label: "Home" },
+  { href: "/dashboard", label: "Dashboard" },
+  { href: "/upload-iar", label: "Upload IAR" },
+  { href: "/upload-procured-meds", label: "Upload Procured Meds" },
+  { href: "/manual-procured-meds", label: "Manual Procured Meds Insert" },
+];
 
 export default function Home() {
   return (
@@ -12,6 +21,23 @@ export default function Home() {
             List of unique PO numbers with PO date, supplier, and completion
             status.
           </p>
+        </section>
+
+        <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <h2 className="text-lg font-semibold tracking-tight sm:text-xl">
+            Routes
+          </h2>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            {appRoutes.map((route) => (
+              <Link
+                key={route.href}
+                href={route.href}
+                className="rounded-lg border border-slate-200 px-4 py-3 text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900"
+              >
+                {route.label}
+              </Link>
+            ))}
+          </div>
         </section>
 
         <ListsOfPOs />
