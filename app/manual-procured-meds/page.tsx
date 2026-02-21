@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 type FormState = {
@@ -51,9 +51,33 @@ function toNullableInteger(value: string): number | null {
 export default function ManualProcuredMedsPage() {
   const router = useRouter();
   const [form, setForm] = useState<FormState>(initialForm);
+  const [supplierOptions, setSupplierOptions] = useState<string[]>([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState("");
   const [successPoNumber, setSuccessPoNumber] = useState<string | null>(null);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    const loadSuppliers = async () => {
+      try {
+        const res = await fetch("/api/suppliers");
+        if (!res.ok) return;
+
+        const json = (await res.json()) as { suppliers?: string[] };
+        if (!isMounted) return;
+        setSupplierOptions(Array.isArray(json.suppliers) ? json.suppliers : []);
+      } catch {
+        if (!isMounted) return;
+        setSupplierOptions([]);
+      }
+    };
+
+    loadSuppliers();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -168,13 +192,20 @@ export default function ManualProcuredMedsPage() {
 
             <label className="space-y-1 text-sm">
               <span className="font-medium text-slate-700">Supplier</span>
-              <input
+              <select
                 className="w-full rounded-lg border border-slate-300 px-3 py-2 outline-none ring-slate-400 focus:ring"
                 value={form.supplier}
                 onChange={(e) =>
                   setForm((prev) => ({ ...prev, supplier: e.target.value }))
                 }
-              />
+              >
+                <option value="">Select supplier</option>
+                {supplierOptions.map((supplier) => (
+                  <option key={supplier} value={supplier}>
+                    {supplier}
+                  </option>
+                ))}
+              </select>
             </label>
 
             <label className="space-y-1 text-sm">
