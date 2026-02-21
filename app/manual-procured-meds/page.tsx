@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, KeyboardEvent, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 type FormState = {
@@ -46,6 +46,25 @@ function toNullableInteger(value: string): number | null {
   const parsed = toNullableNumber(value);
   if (parsed == null) return null;
   return Number.isInteger(parsed) ? parsed : null;
+}
+
+function isFormField(el: Element): el is HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement {
+  if (
+    !(el instanceof HTMLInputElement) &&
+    !(el instanceof HTMLSelectElement) &&
+    !(el instanceof HTMLTextAreaElement)
+  ) {
+    return false;
+  }
+
+  if (el instanceof HTMLInputElement) {
+    const type = el.type;
+    if (type === "hidden" || type === "submit" || type === "button" || type === "reset") {
+      return false;
+    }
+  }
+
+  return !el.disabled;
 }
 
 export default function ManualProcuredMedsPage() {
@@ -155,6 +174,38 @@ export default function ManualProcuredMedsPage() {
     router.push(`/dashboard/${encodeURIComponent(successPoNumber)}`);
   };
 
+  const onFormKeyDown = (e: KeyboardEvent<HTMLFormElement>) => {
+    if (e.key !== "Enter") return;
+    if (e.ctrlKey || e.altKey || e.metaKey) return;
+
+    const target = e.target;
+    if (!(target instanceof Element) || !isFormField(target)) return;
+    if (target instanceof HTMLTextAreaElement) return;
+
+    const formEl = e.currentTarget;
+    const fields = Array.from(
+      formEl.querySelectorAll("input, select, textarea"),
+    ).filter(isFormField);
+
+    const currentIndex = fields.indexOf(target);
+    if (currentIndex === -1) return;
+
+    e.preventDefault();
+    if (e.shiftKey) {
+      const prevField = fields[currentIndex - 1];
+      if (prevField) prevField.focus();
+      return;
+    }
+
+    const nextField = fields[currentIndex + 1];
+    if (nextField) {
+      nextField.focus();
+      return;
+    }
+
+    formEl.requestSubmit();
+  };
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 px-4 py-10 text-slate-900 sm:px-6 lg:px-8">
       <div className="mx-auto w-full max-w-4xl space-y-6">
@@ -169,6 +220,7 @@ export default function ManualProcuredMedsPage() {
 
         <form
           onSubmit={onSubmit}
+          onKeyDown={onFormKeyDown}
           className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8"
         >
           <div className="grid gap-4 sm:grid-cols-2">
