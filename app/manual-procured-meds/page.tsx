@@ -192,20 +192,22 @@ export default function ManualProcuredMedsPage() {
 
             <label className="space-y-1 text-sm">
               <span className="font-medium text-slate-700">Supplier</span>
-              <select
+              <input
+                list="supplier-options"
                 className="w-full rounded-lg border border-slate-300 px-3 py-2 outline-none ring-slate-400 focus:ring"
                 value={form.supplier}
                 onChange={(e) =>
                   setForm((prev) => ({ ...prev, supplier: e.target.value }))
                 }
-              >
-                <option value="">Select supplier</option>
+                placeholder="Type or select supplier"
+              />
+              <datalist id="supplier-options">
                 {supplierOptions.map((supplier) => (
                   <option key={supplier} value={supplier}>
                     {supplier}
                   </option>
                 ))}
-              </select>
+              </datalist>
             </label>
 
             <label className="space-y-1 text-sm">
