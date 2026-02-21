@@ -52,6 +52,7 @@ export default function ManualProcuredMedsPage() {
   const router = useRouter();
   const [form, setForm] = useState<FormState>(initialForm);
   const [supplierOptions, setSupplierOptions] = useState<string[]>([]);
+  const [modeOptions, setModeOptions] = useState<string[]>([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState("");
   const [successPoNumber, setSuccessPoNumber] = useState<string | null>(null);
@@ -59,21 +60,40 @@ export default function ManualProcuredMedsPage() {
   useEffect(() => {
     let isMounted = true;
 
-    const loadSuppliers = async () => {
+    const loadOptions = async () => {
       try {
-        const res = await fetch("/api/suppliers");
-        if (!res.ok) return;
+        const [supplierRes, modeRes] = await Promise.all([
+          fetch("/api/suppliers"),
+          fetch("/api/modes-of-procurement"),
+        ]);
 
-        const json = (await res.json()) as { suppliers?: string[] };
         if (!isMounted) return;
-        setSupplierOptions(Array.isArray(json.suppliers) ? json.suppliers : []);
+
+        if (supplierRes.ok) {
+          const supplierJson = (await supplierRes.json()) as {
+            suppliers?: string[];
+          };
+          setSupplierOptions(
+            Array.isArray(supplierJson.suppliers) ? supplierJson.suppliers : [],
+          );
+        } else {
+          setSupplierOptions([]);
+        }
+
+        if (modeRes.ok) {
+          const modeJson = (await modeRes.json()) as { modes?: string[] };
+          setModeOptions(Array.isArray(modeJson.modes) ? modeJson.modes : []);
+        } else {
+          setModeOptions([]);
+        }
       } catch {
         if (!isMounted) return;
         setSupplierOptions([]);
+        setModeOptions([]);
       }
     };
 
-    loadSuppliers();
+    loadOptions();
     return () => {
       isMounted = false;
     };
@@ -215,6 +235,7 @@ export default function ManualProcuredMedsPage() {
                 Mode of Procurement
               </span>
               <input
+                list="mode-options"
                 className="w-full rounded-lg border border-slate-300 px-3 py-2 outline-none ring-slate-400 focus:ring"
                 value={form.modeOfProcurement}
                 onChange={(e) =>
@@ -223,7 +244,15 @@ export default function ManualProcuredMedsPage() {
                     modeOfProcurement: e.target.value,
                   }))
                 }
+                placeholder="Type or select mode"
               />
+              <datalist id="mode-options">
+                {modeOptions.map((mode) => (
+                  <option key={mode} value={mode}>
+                    {mode}
+                  </option>
+                ))}
+              </datalist>
             </label>
 
             <label className="space-y-1 text-sm">
