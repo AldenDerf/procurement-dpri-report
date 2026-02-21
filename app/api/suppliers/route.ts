@@ -7,13 +7,35 @@ type SupplierRow = {
 
 export async function GET() {
   try {
-    const rows = await prisma.$queryRaw<SupplierRow[]>`
-      SELECT DISTINCT supplier
-      FROM database_suplier
-      WHERE supplier IS NOT NULL
-        AND TRIM(supplier) <> ''
-      ORDER BY supplier ASC
-    `;
+    let rows: SupplierRow[] = [];
+
+    try {
+      rows = await prisma.$queryRaw<SupplierRow[]>`
+        SELECT DISTINCT supplier
+        FROM database_supplier
+        WHERE supplier IS NOT NULL
+          AND TRIM(supplier) <> ''
+        ORDER BY supplier ASC
+      `;
+    } catch {
+      try {
+        rows = await prisma.$queryRaw<SupplierRow[]>`
+          SELECT DISTINCT supplier
+          FROM database_suplier
+          WHERE supplier IS NOT NULL
+            AND TRIM(supplier) <> ''
+          ORDER BY supplier ASC
+        `;
+      } catch {
+        rows = await prisma.$queryRaw<SupplierRow[]>`
+          SELECT DISTINCT supplier
+          FROM procured_meds
+          WHERE supplier IS NOT NULL
+            AND TRIM(supplier) <> ''
+          ORDER BY supplier ASC
+        `;
+      }
+    }
 
     const suppliers = rows
       .map((row) => row.supplier?.trim() ?? "")
