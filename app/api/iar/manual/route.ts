@@ -24,115 +24,125 @@ function parseDateOnly(value: string): Date | null {
 }
 
 export async function POST(req: Request) {
-  const body = await req.json();
-  const parsed = ManualIarInsertSchema.safeParse(body);
+  try {
+    const body = await req.json();
+    const parsed = ManualIarInsertSchema.safeParse(body);
 
-  if (!parsed.success) {
-    return NextResponse.json(
-      { error: "Invalid input. Please check required fields." },
-      { status: 400 },
-    );
-  }
+    if (!parsed.success) {
+      return NextResponse.json(
+        { error: "Invalid input. Please check required fields." },
+        { status: 400 },
+      );
+    }
 
-  const data = parsed.data;
-  const dateOfInspection = parseDateOnly(data.dateOfInspection);
-  if (!dateOfInspection) {
-    return NextResponse.json(
-      { error: "Invalid inspection date." },
-      { status: 400 },
-    );
-  }
+    const data = parsed.data;
+    const dateOfInspection = parseDateOnly(data.dateOfInspection);
+    if (!dateOfInspection) {
+      return NextResponse.json(
+        { error: "Invalid inspection date." },
+        { status: 400 },
+      );
+    }
 
-  const expirationDate = data.expirationDate
-    ? parseDateOnly(data.expirationDate)
-    : null;
-  if (data.expirationDate && !expirationDate) {
-    return NextResponse.json({ error: "Invalid expiration date." }, { status: 400 });
-  }
+    const expirationDate = data.expirationDate
+      ? parseDateOnly(data.expirationDate)
+      : null;
+    if (data.expirationDate && !expirationDate) {
+      return NextResponse.json(
+        { error: "Invalid expiration date." },
+        { status: 400 },
+      );
+    }
 
-  const iarDelegate = (
-    prisma as unknown as {
-      iar?: {
-        findFirst: (args: {
-          where: {
-            iarNumber_poNumber_itemNumber: {
+    const iarDelegate = (
+      prisma as unknown as {
+        iar?: {
+          findFirst: (args: {
+            where: {
               iarNumber: string;
               poNumber: string;
               itemNumber: number;
             };
-          };
-          select: { id: true };
-        }) => Promise<{ id: number } | null>;
-        create: (args: {
-          data: {
-            iarNumber: string;
-            dateOfInspection: Date;
-            poNumber: string;
-            itemNumber: number;
-            inspectedQuantity: number;
-            requisitioningOffice: string | null;
-            brand: string | null;
-            batchLotNumber: string | null;
-            expirationDate: Date | null;
-          };
-          select: { iarNumber: true; poNumber: true; itemNumber: true };
-        }) => Promise<{ iarNumber: string; poNumber: string; itemNumber: number }>;
-      };
+            select: { id: true };
+          }) => Promise<{ id: number } | null>;
+          create: (args: {
+            data: {
+              iarNumber: string;
+              dateOfInspection: Date;
+              poNumber: string;
+              itemNumber: number;
+              inspectedQuantity: number;
+              requisitioningOffice: string | null;
+              brand: string | null;
+              batchLotNumber: string | null;
+              expirationDate: Date | null;
+            };
+            select: { iarNumber: true; poNumber: true; itemNumber: true };
+          }) => Promise<{ iarNumber: string; poNumber: string; itemNumber: number }>;
+        };
+      }
+    ).iar;
+
+    if (!iarDelegate) {
+      return NextResponse.json(
+        {
+          error:
+            "Prisma client has no IAR model loaded. Run `pnpm prisma generate` and restart `pnpm dev`.",
+        },
+        { status: 500 },
+      );
     }
-  ).iar;
 
-  if (!iarDelegate) {
-    return NextResponse.json(
-      {
-        error:
-          "Prisma client has no IAR model loaded. Run `pnpm prisma generate` and restart `pnpm dev`.",
-      },
-      { status: 500 },
-    );
-  }
-
-  const existing = await iarDelegate.findFirst({
-    where: {
-      iarNumber_poNumber_itemNumber: {
+    const existing = await iarDelegate.findFirst({
+      where: {
         iarNumber: data.iarNumber,
         poNumber: data.poNumber,
         itemNumber: data.itemNumber,
       },
-    },
-    select: { id: true },
-  });
+      select: { id: true },
+    });
 
-  if (existing) {
+    if (existing) {
+      return NextResponse.json(
+        { error: "IAR number, PO number, and item number already exist." },
+        { status: 409 },
+      );
+    }
+
+    const created = await iarDelegate.create({
+      data: {
+        iarNumber: data.iarNumber,
+        dateOfInspection,
+        poNumber: data.poNumber,
+        itemNumber: data.itemNumber,
+        inspectedQuantity: data.inspectedQuantity,
+        requisitioningOffice: data.requisitioningOffice ?? null,
+        brand: data.brand ?? null,
+        batchLotNumber: data.batchLotNumber ?? null,
+        expirationDate: expirationDate ?? null,
+      },
+      select: {
+        iarNumber: true,
+        poNumber: true,
+        itemNumber: true,
+      },
+    });
+
+    return NextResponse.json({
+      message: "Inserted",
+      iarNumber: created.iarNumber,
+      poNumber: created.poNumber,
+      itemNumber: created.itemNumber,
+    });
+  } catch (error) {
     return NextResponse.json(
-      { error: "IAR number, PO number, and item number already exist." },
-      { status: 409 },
+      {
+        error:
+          error instanceof Error
+            ? error.message
+            : "Unexpected error while inserting manual IAR.",
+      },
+      { status: 500 },
     );
   }
-
-  const created = await iarDelegate.create({
-    data: {
-      iarNumber: data.iarNumber,
-      dateOfInspection,
-      poNumber: data.poNumber,
-      itemNumber: data.itemNumber,
-      inspectedQuantity: data.inspectedQuantity,
-      requisitioningOffice: data.requisitioningOffice ?? null,
-      brand: data.brand ?? null,
-      batchLotNumber: data.batchLotNumber ?? null,
-      expirationDate: expirationDate ?? null,
-    },
-    select: {
-      iarNumber: true,
-      poNumber: true,
-      itemNumber: true,
-    },
-  });
-
-  return NextResponse.json({
-    message: "Inserted",
-    iarNumber: created.iarNumber,
-    poNumber: created.poNumber,
-    itemNumber: created.itemNumber,
-  });
 }
-

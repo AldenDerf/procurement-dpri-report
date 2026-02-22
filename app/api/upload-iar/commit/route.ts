@@ -52,6 +52,15 @@ function chunk<T>(items: T[], size: number): T[][] {
 const keyOf = (iarNumber: string, poNumber: string, itemNumber: number) =>
   `${iarNumber}::${poNumber}::${itemNumber}`;
 
+function parseDateOnly(value: string): Date | null {
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+  const parsed = /^\d{4}-\d{2}-\d{2}$/.test(trimmed)
+    ? new Date(`${trimmed}T00:00:00`)
+    : new Date(trimmed);
+  return Number.isNaN(parsed.getTime()) ? null : parsed;
+}
+
 export async function POST(req: Request) {
   try {
     const body = await req.json();
@@ -85,8 +94,8 @@ export async function POST(req: Request) {
 
     const mapped: PreparedRow[] = [];
     for (const [idx, r] of parsed.data.rows.entries()) {
-      const inspectionDate = new Date(r.dateOfInspection);
-      if (Number.isNaN(inspectionDate.getTime())) {
+      const inspectionDate = parseDateOnly(r.dateOfInspection);
+      if (!inspectionDate) {
         return NextResponse.json(
           { error: `Invalid inspection date at row ${idx + 2}: ${r.dateOfInspection}` },
           { status: 400 },
@@ -95,8 +104,8 @@ export async function POST(req: Request) {
 
       let expirationDate: Date | null = null;
       if (r.expirationDate) {
-        const exp = new Date(r.expirationDate);
-        if (Number.isNaN(exp.getTime())) {
+        const exp = parseDateOnly(r.expirationDate);
+        if (!exp) {
           return NextResponse.json(
             { error: `Invalid expiration date at row ${idx + 2}: ${r.expirationDate}` },
             { status: 400 },

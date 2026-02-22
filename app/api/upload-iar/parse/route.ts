@@ -24,24 +24,53 @@ function cleanText(value: unknown): string | null {
 function normalizeDate(value: unknown): string | null {
   if (value == null || value === "") return null;
 
+  const toYyyyMmDd = (year: number, month: number, day: number) =>
+    `${String(year).padStart(4, "0")}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+
   if (typeof value === "string") {
     const trimmed = value.trim();
     if (!trimmed) return null;
 
+    const mmddyyyy = trimmed.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+    if (mmddyyyy) {
+      const month = Number(mmddyyyy[1]);
+      const day = Number(mmddyyyy[2]);
+      const year = Number(mmddyyyy[3]);
+      return toYyyyMmDd(year, month, day);
+    }
+
+    const yyyymmdd = trimmed.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
+    if (yyyymmdd) {
+      return toYyyyMmDd(
+        Number(yyyymmdd[1]),
+        Number(yyyymmdd[2]),
+        Number(yyyymmdd[3]),
+      );
+    }
+
     const parsed = new Date(trimmed);
-    if (!Number.isNaN(parsed.getTime())) return parsed.toISOString().slice(0, 10);
+    if (!Number.isNaN(parsed.getTime())) {
+      return toYyyyMmDd(
+        parsed.getFullYear(),
+        parsed.getMonth() + 1,
+        parsed.getDate(),
+      );
+    }
     return trimmed;
   }
 
   if (value instanceof Date && !Number.isNaN(value.getTime())) {
-    return value.toISOString().slice(0, 10);
+    return toYyyyMmDd(
+      value.getFullYear(),
+      value.getMonth() + 1,
+      value.getDate(),
+    );
   }
 
   if (typeof value === "number") {
     const d = XLSX.SSF.parse_date_code(value);
     if (!d) return null;
-    const js = new Date(Date.UTC(d.y, d.m - 1, d.d));
-    return js.toISOString().slice(0, 10);
+    return toYyyyMmDd(d.y, d.m, d.d);
   }
 
   return null;
@@ -167,4 +196,3 @@ export async function POST(req: Request) {
     allValidRows: validRows,
   });
 }
-

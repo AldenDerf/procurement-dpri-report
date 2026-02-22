@@ -122,16 +122,26 @@ export default function ManualIarPage() {
         body: JSON.stringify(payload),
       });
 
-      const json = await res.json();
+      const raw = await res.text();
+      let json: Record<string, unknown> = {};
+      try {
+        json = raw ? (JSON.parse(raw) as Record<string, unknown>) : {};
+      } catch {
+        json = {};
+      }
       if (!res.ok) {
-        setError(json?.error ?? "Insert failed.");
+        setError(
+          typeof json.error === "string"
+            ? json.error
+            : `Insert failed (HTTP ${res.status}).`,
+        );
         return;
       }
 
       setSuccess({
-        iarNumber: json.iarNumber,
-        poNumber: json.poNumber,
-        itemNumber: json.itemNumber,
+        iarNumber: String(json.iarNumber ?? ""),
+        poNumber: String(json.poNumber ?? ""),
+        itemNumber: Number(json.itemNumber ?? 0),
       });
       setForm(initialForm);
       setPoSearch("");
@@ -344,4 +354,3 @@ export default function ManualIarPage() {
     </main>
   );
 }
-
