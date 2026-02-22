@@ -6,6 +6,7 @@ const appRoutes = [
   { href: "/dashboard", label: "Dashboard" },
   { href: "/upload-iar", label: "Upload IAR" },
   { href: "/upload-procured-meds", label: "Upload Procured Meds" },
+  { href: "/manual-iar", label: "Manual IAR Insert" },
   { href: "/manual-procured-meds", label: "Manual Procured Meds Insert" },
 ];
 

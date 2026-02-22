@@ -27,19 +27,47 @@ const RowSchema = z.object({
 function normalizeDate(value: unknown): string | null {
   if (value == null || value === "") return null;
 
+  const toYyyyMmDd = (year: number, month: number, day: number) =>
+    `${String(year).padStart(4, "0")}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+
   // If it already looks like a date string
-  if (typeof value === "string") return value;
+  if (typeof value === "string") {
+    const trimmed = value.trim();
+    if (!trimmed) return null;
+
+    const mmddyyyy = trimmed.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+    if (mmddyyyy) {
+      const month = Number(mmddyyyy[1]);
+      const day = Number(mmddyyyy[2]);
+      const year = Number(mmddyyyy[3]);
+      return toYyyyMmDd(year, month, day);
+    }
+
+    const yyyymmdd = trimmed.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
+    if (yyyymmdd) {
+      return toYyyyMmDd(
+        Number(yyyymmdd[1]),
+        Number(yyyymmdd[2]),
+        Number(yyyymmdd[3]),
+      );
+    }
+
+    return trimmed;
+  }
 
   // XLSX may give Date if cellDates:true
   if (value instanceof Date && !isNaN(value.getTime()))
-    return value.toISOString().slice(0, 10);
+    return toYyyyMmDd(
+      value.getFullYear(),
+      value.getMonth() + 1,
+      value.getDate(),
+    );
 
   // Sometimes Excel date becomes a number (serial)
   if (typeof value === "number") {
     const d = XLSX.SSF.parse_date_code(value);
     if (!d) return null;
-    const js = new Date(Date.UTC(d.y, d.m - 1, d.d));
-    return js.toISOString().slice(0, 10);
+    return toYyyyMmDd(d.y, d.m, d.d);
   }
 
   return null;

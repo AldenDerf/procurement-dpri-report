@@ -32,6 +32,12 @@ export default function DashboardPage() {
             >
               Manual Insert
             </Link>
+            <Link
+              href="/manual-iar"
+              className="inline-flex items-center rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-800 transition hover:bg-slate-100"
+            >
+              Manual IAR Insert
+            </Link>
           </div>
         </section>
 

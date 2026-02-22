@@ -57,6 +57,18 @@ type CommitLog = {
 
 const keyOf = (poNumber: string, itemNo: number) => `${poNumber}::${itemNo}`;
 
+function parsePoDate(value: string | null | undefined): Date | null {
+  if (!value) return null;
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+
+  const parsed = /^\d{4}-\d{2}-\d{2}$/.test(trimmed)
+    ? new Date(`${trimmed}T00:00:00`)
+    : new Date(trimmed);
+
+  return Number.isNaN(parsed.getTime()) ? null : parsed;
+}
+
 function chunk<T>(items: T[], size: number): T[][];
 function chunk<T>(items: T[], size: number): T[][] {
   const out: T[][] = [];
@@ -80,7 +92,7 @@ export async function POST(req: Request) {
   const mapped: PreparedRow[] = parsed.data.rows.map((r, idx) => ({
     poNumber: r.poNumber,
     itemNo: r.itemNo,
-    poDate: r.poDate ? new Date(r.poDate) : null,
+    poDate: parsePoDate(r.poDate),
     supplier: r.supplier ?? null,
     modeOfProcurement: r.modeOfProcurement ?? null,
     genericName: r.genericName ?? null,
