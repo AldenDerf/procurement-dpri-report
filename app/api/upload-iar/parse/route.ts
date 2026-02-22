@@ -110,8 +110,37 @@ function parseParticulars(raw: unknown): {
   }
 
   const brand = particulars.match(/"([^"]+)"/)?.[1]?.trim() ?? null;
-  const batchRaw = particulars.match(/\bB\/L\.?\s*:\s*([^;,\n]+)/i)?.[1]?.trim() ?? null;
-  const expiryRaw = particulars.match(/\bExp\.?\s*:\s*([^;,\n]+)/i)?.[1]?.trim() ?? null;
+  const lines = particulars
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter(Boolean);
+
+  let batchRaw =
+    particulars.match(/\b(?:B\/L|Batch|Lot)\.?\s*:\s*([^;,\n]+)/i)?.[1]?.trim() ??
+    null;
+
+  if (!batchRaw) {
+    const likelyBatch = lines.find(
+      (line) =>
+        /[0-9]/.test(line) &&
+        /^[A-Za-z0-9-]{5,}$/.test(line) &&
+        !/^\d{1,2}\/\d{4}$/.test(line) &&
+        !/^\d{4}-\d{1,2}-\d{1,2}$/.test(line),
+    );
+    batchRaw = likelyBatch ?? null;
+  }
+
+  let expiryRaw =
+    particulars.match(/\b(?:Exp|Expiry|Expiration)\.?\s*:\s*([^;,\n]+)/i)?.[1]?.trim() ??
+    null;
+
+  if (!expiryRaw) {
+    const inlineDate =
+      particulars.match(/\b(0?[1-9]|1[0-2])\/\d{4}\b/)?.[0] ??
+      particulars.match(/\b\d{4}-\d{1,2}-\d{1,2}\b/)?.[0] ??
+      null;
+    expiryRaw = inlineDate;
+  }
 
   return {
     brand,
@@ -122,7 +151,8 @@ function parseParticulars(raw: unknown): {
 
 function normalizeInt(value: unknown): number | null {
   if (value == null || value === "") return null;
-  const n = Number(value);
+  const raw = typeof value === "string" ? value.replace(/,/g, "").trim() : value;
+  const n = Number(raw);
   if (!Number.isFinite(n)) return null;
   return Math.trunc(n);
 }
@@ -161,8 +191,17 @@ export async function POST(req: Request) {
         iarNumber: String(get(r, "IAR No") ?? get(r, "IAR Number") ?? "").trim(),
         dateOfInspection: normalizeDate(get(r, "Date of Inspection")),
         poNumber: String(get(r, "PO Number") ?? "").trim(),
-        itemNumber: normalizeInt(get(r, "Item Number")),
-        inspectedQuantity: normalizeInt(get(r, "Quantity")),
+        itemNumber: normalizeInt(
+          get(r, "Item Number") ??
+            get(r, "Item No") ??
+            get(r, "Item") ??
+            get(r, "Item #"),
+        ),
+        inspectedQuantity: normalizeInt(
+          get(r, "Quantity") ??
+            get(r, "Inspected Quantity") ??
+            get(r, "Qty"),
+        ),
 
         requisitioningOffice: cleanText(get(r, "Requisitioning Office")),
         brand: particulars.brand,
@@ -179,7 +218,12 @@ export async function POST(req: Request) {
     if (!parsed.success) {
       errors.push({
         index: i + 2,
-        message: parsed.error.issues.map((x) => x.message).join(", "),
+        message: parsed.error.issues
+          .map((x) => {
+            const field = x.path[0] ? `${x.path[0]}: ` : "";
+            return `${field}${x.message}`;
+          })
+          .join(", "),
       });
       return;
     }
