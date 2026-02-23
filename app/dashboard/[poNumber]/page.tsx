@@ -266,6 +266,15 @@ export default async function PoDetailsPage({
               {notDeliveredCount}
             </div>
           </div>
+
+          <div className="mt-4">
+            <Link
+              href={`/dashboard/${encodeURIComponent(poNumber)}/iars`}
+              className="inline-flex items-center rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50"
+            >
+              View IAR List for this PO
+            </Link>
+          </div>
         </section>
 
         {renderStatusTable("Complete", completedRows)}
