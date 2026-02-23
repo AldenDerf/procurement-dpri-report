@@ -136,12 +136,31 @@ export default async function PoIarsPage({
                 </thead>
                 <tbody className="divide-y divide-slate-100">
                   {summaries.map((row) => (
-                    <tr key={row.iarNumber} className="hover:bg-slate-50">
-                      <td className="px-4 py-3 text-slate-900">{row.iarNumber}</td>
-                      <td className="px-4 py-3 text-slate-700">
-                        {formatDate(row.dateOfInspection)}
+                    <tr key={row.iarNumber} className="cursor-pointer hover:bg-slate-50">
+                      <td className="px-4 py-3 text-slate-900">
+                        <Link
+                          href={`/dashboard/${encodeURIComponent(poNumber)}/iars/${encodeURIComponent(row.iarNumber)}`}
+                          className="block"
+                        >
+                          {row.iarNumber}
+                        </Link>
                       </td>
-                      <td className="px-4 py-3 text-slate-700">{row.itemsCount}</td>
+                      <td className="px-4 py-3 text-slate-700">
+                        <Link
+                          href={`/dashboard/${encodeURIComponent(poNumber)}/iars/${encodeURIComponent(row.iarNumber)}`}
+                          className="block"
+                        >
+                          {formatDate(row.dateOfInspection)}
+                        </Link>
+                      </td>
+                      <td className="px-4 py-3 text-slate-700">
+                        <Link
+                          href={`/dashboard/${encodeURIComponent(poNumber)}/iars/${encodeURIComponent(row.iarNumber)}`}
+                          className="block"
+                        >
+                          {row.itemsCount}
+                        </Link>
+                      </td>
                     </tr>
                   ))}
                 </tbody>
