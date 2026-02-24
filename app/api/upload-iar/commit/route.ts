@@ -32,6 +32,12 @@ type PreparedRow = {
   rowIndex: number;
 };
 
+type ManufacturerRow = {
+  poNumber: string;
+  itemNo: number;
+  manufacturer: string | null;
+};
+
 type CommitLog = {
   rowIndex: number;
   iarNumber: string;
@@ -39,6 +45,29 @@ type CommitLog = {
   itemNumber: number;
   result: "inserted" | "skipped";
   reason?: "already_exists" | "duplicate_in_upload";
+};
+
+type IarDelegate = {
+  findMany: (args: {
+    where: {
+      OR: Array<{ iarNumber: string; poNumber: string; itemNumber: number }>;
+    };
+    select: { iarNumber: true; poNumber: true; itemNumber: true };
+  }) => Promise<Array<{ iarNumber: string; poNumber: string; itemNumber: number }>>;
+  createMany: (args: {
+    data: Array<{
+      iarNumber: string;
+      dateOfInspection: Date;
+      poNumber: string;
+      itemNumber: number;
+      inspectedQuantity: number;
+      requisitioningOffice: string | null;
+      brand: string | null;
+      manufacturer: string | null;
+      batchLotNumber: string | null;
+      expirationDate: Date | null;
+    }>;
+  }) => Promise<{ count: number }>;
 };
 
 function chunk<T>(items: T[], size: number): T[][] {
@@ -75,10 +104,7 @@ export async function POST(req: Request) {
 
     const iarDelegate = (
       prisma as unknown as {
-        iar?: {
-          findMany: typeof prisma.procuredMed.findMany;
-          createMany: typeof prisma.procuredMed.createMany;
-        };
+        iar?: IarDelegate;
       }
     ).iar;
 
@@ -150,6 +176,40 @@ export async function POST(req: Request) {
       dedupedRows.push(row);
     }
 
+    const manufacturerByPoItem = new Map<string, string | null>();
+    const uniquePoItem = new Set<string>();
+    for (const row of dedupedRows) {
+      uniquePoItem.add(`${row.poNumber}::${row.itemNumber}`);
+    }
+
+    const poItemPairs = Array.from(uniquePoItem).map((key) => {
+      const [poNumber, itemNumber] = key.split("::");
+      return { poNumber, itemNumber: Number(itemNumber) };
+    });
+
+    for (const group of chunk(poItemPairs, 500)) {
+      const found = await prisma.procuredMed.findMany({
+        where: {
+          OR: group.map((pair) => ({
+            poNumber: pair.poNumber,
+            itemNo: pair.itemNumber,
+          })),
+        },
+        select: {
+          poNumber: true,
+          itemNo: true,
+          manufacturer: true,
+        },
+      });
+
+      for (const row of found as ManufacturerRow[]) {
+        manufacturerByPoItem.set(
+          `${row.poNumber}::${row.itemNo}`,
+          row.manufacturer?.trim() || null,
+        );
+      }
+    }
+
     const existing = new Set<string>();
 
     for (const group of chunk(dedupedRows, 500)) {
@@ -168,7 +228,7 @@ export async function POST(req: Request) {
         },
       });
 
-      for (const row of found as Array<{ iarNumber: string; poNumber: string; itemNumber: number }>) {
+      for (const row of found) {
         existing.add(keyOf(row.iarNumber, row.poNumber, row.itemNumber));
       }
     }
@@ -185,6 +245,8 @@ export async function POST(req: Request) {
         inspectedQuantity: row.inspectedQuantity,
         requisitioningOffice: row.requisitioningOffice,
         brand: row.brand,
+        manufacturer:
+          manufacturerByPoItem.get(`${row.poNumber}::${row.itemNumber}`) ?? null,
         batchLotNumber: row.batchLotNumber,
         expirationDate: row.expirationDate,
       }));

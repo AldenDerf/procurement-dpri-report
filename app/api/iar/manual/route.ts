@@ -54,6 +54,16 @@ export async function POST(req: Request) {
       );
     }
 
+    const procured = await prisma.procuredMed.findFirst({
+      where: {
+        poNumber: data.poNumber,
+        itemNo: data.itemNumber,
+      },
+      select: { manufacturer: true },
+    });
+
+    const manufacturer = procured?.manufacturer?.trim() || null;
+
     const iarDelegate = (
       prisma as unknown as {
         iar?: {
@@ -74,6 +84,7 @@ export async function POST(req: Request) {
               inspectedQuantity: number;
               requisitioningOffice: string | null;
               brand: string | null;
+              manufacturer: string | null;
               batchLotNumber: string | null;
               expirationDate: Date | null;
             };
@@ -118,6 +129,7 @@ export async function POST(req: Request) {
         inspectedQuantity: data.inspectedQuantity,
         requisitioningOffice: data.requisitioningOffice ?? null,
         brand: data.brand ?? null,
+        manufacturer,
         batchLotNumber: data.batchLotNumber ?? null,
         expirationDate: expirationDate ?? null,
       },

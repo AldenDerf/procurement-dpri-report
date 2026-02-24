@@ -51,6 +51,7 @@ model Iar {
 
   requisitioningOffice String?   @map("requisitioning_office")
   brand                String?   @map("brand")
+  manufacturer         String?   @map("manufacturer") @db.VarChar(255)
   batchLotNumber       String?   @map("batch_lot_number")
   expirationDate       DateTime? @map("expiration_date")
   inspectedQuantity    Int       @map("inspected_quantity")
