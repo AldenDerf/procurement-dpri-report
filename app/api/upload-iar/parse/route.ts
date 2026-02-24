@@ -15,6 +15,30 @@ const RowSchema = z.object({
   expirationDate: z.string().optional().nullable(),
 });
 
+function hasMappedData(row: {
+  iarNumber: string;
+  dateOfInspection: string | null;
+  poNumber: string;
+  itemNumber: number | null;
+  inspectedQuantity: number | null;
+  requisitioningOffice: string | null;
+  brand: string | null;
+  batchLotNumber: string | null;
+  expirationDate: string | null;
+}): boolean {
+  return (
+    row.iarNumber.length > 0 ||
+    (row.dateOfInspection ?? "").trim().length > 0 ||
+    row.poNumber.length > 0 ||
+    row.itemNumber != null ||
+    row.inspectedQuantity != null ||
+    (row.requisitioningOffice ?? "").trim().length > 0 ||
+    (row.brand ?? "").trim().length > 0 ||
+    (row.batchLotNumber ?? "").trim().length > 0 ||
+    (row.expirationDate ?? "").trim().length > 0
+  );
+}
+
 function cleanText(value: unknown): string | null {
   if (value == null) return null;
   const text = String(value).trim();
@@ -208,7 +232,8 @@ export async function POST(req: Request) {
         batchLotNumber: particulars.batchLotNumber,
         expirationDate: particulars.expirationDate,
       };
-    });
+    })
+    .filter(hasMappedData);
 
   const errors: { index: number; message: string }[] = [];
   const validRows: z.infer<typeof RowSchema>[] = [];
@@ -220,7 +245,7 @@ export async function POST(req: Request) {
         index: i + 2,
         message: parsed.error.issues
           .map((x) => {
-            const field = x.path[0] ? `${x.path[0]}: ` : "";
+            const field = x.path[0] != null ? `${String(x.path[0])}: ` : "";
             return `${field}${x.message}`;
           })
           .join(", "),
