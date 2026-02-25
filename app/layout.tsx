@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/dashboard", label: "Dashboard" },
+  { href: "/dpri-b-report", label: "DPRI-B Report" },
   { href: "/upload-iar", label: "Upload IAR" },
   { href: "/upload-procured-meds", label: "Upload Procured Meds" },
   { href: "/manual-iar", label: "Manual IAR Insert" },

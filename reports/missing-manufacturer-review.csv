@@ -1,0 +1,525 @@
+po_number,item_no,brand_name,generic_name,supplier,mode_of_procurement,suggested_manufacturer,confidence,basis
+25010001,0,Ritemed,Losartan 50mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,4,Flummucil,Acetylcystein 100mG,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,5,Flummucil,Acetylcystein 200mG,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,6,Flummucil,"Acetylcysteine 200mg/ml, 25ml solution for injection",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,7,Flummucil,Acetylcysteine 600mg (effervescent),EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,8,Xyclovirax,Aciclovir 800mG tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,9,Albinorm,"Albumin, Human 20%, 50ml",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,10,Unilab,All in one Admixtures 1400 kcal. Variable content; peripheral line (Fat Emlusion + Amino Acids with Electrolytes + Glucose) 1920mL,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,11,Alluprex,Allopurinol 100mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,12,Alluprex,Allopurinol 300mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,13,Cocine,"Amikasin Sulfate 125mg / ml, 2ml",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,14,Aminosteril,"Amino Acids, Crystalline  Standard 6%, 100ml solution for injection",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,15,Aminosteril,"Amino Acids, Crystalline Standard 8%, 500mL Solution for Injection Bottle",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,16,Ritemed,Amlodipine 10mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,17,Moxylor,"Amoxicillin 250mg/5ml, 60ml",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,18,Bactinext,Ampicillin 1g + Sulbactam 500mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,19,Eliquis,Apixaban 2.5mG Film-Coated Tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,20,Eliquis,Apixaban 5mG Film-Coated Tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,21,Myrevit,"Ascorbic Acid 100mg / 5ml, 60ml",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,22,Myrevit,"Ascorbic Acid 100mg / ml, 15ml",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,23,Aspilet,Aspirin 80mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,24,Brelvastin,Atorvastatin 20mg,EUROCARE TRADING CORPORATION,Competitive Bidding,Centurion Laboratories Pvt. Ltd.,review,generic weak match (100% of 1)
+25010001,25,Brelvastin,Atorvastatin 80mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,26,Zikant,"Azithromycin 200mg / 5ml, 15ml",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,27,Thromaxin,Azithromycin 500mG tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,28,Azithrx,Azithromycin 500mg vial,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,29,Survanta,"Beractant 25mg/ml, 4ml depot powder for injection",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,30,Cenvert 16,Betahistine 16mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,31,Vertisaph,Betahistine HCl 24mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,32,Scillin,"Biphasic Isophane Human Insulin 70/30 (Recombinant DNA) 100IU/ml , 10ml vial",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,33,Respi-Saph,"Budesonide 250mcG / ml, 2ml resp. sol.",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,34,Budecort,"Budesonide/Formeterol Fumarate Dihydrate 160mcg/ 4.5mcg/ dose, 120 doses (Rapihaler)",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,35,Budecort,"Budesonide/Formeterol Fumarate Dihydrate 160mcg/ 4.5mcg/ dose, 60 doses (Turbuhaler)",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,36,Generic,Butamirate Citrate 50mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,37,J.Chemie,"Calamine 8%, 60ml lotion",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,38,Generic,Calcium Carbonate 1.25g,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,40,Capeget,Capecitabine 500mg,EUROCARE TRADING CORPORATION,Competitive Bidding,Beta Drugs LTD.,review,generic weak match (100% of 1)
+25010001,41,Hyperstop,Captopril 25mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,42,Generic,Carbamazepine 200mG tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,43,Karvidol,Carvedilol 6.25mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,44,Phizolin,Cefazolin 1g,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,45,Tocef,"Cefixime 20mg/ml, 10ml suspension",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,46,Eroxime,Cefuroxime 750mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,47,Celecox,Celecoxib 200mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,48,"""Ceticit",Cetirizine 10mG,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,50,Allecure,"Cetirizine Dihydrochloride 2.5mG/mL, 10mL Oral Drops",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,51,Generic,Cilostazol 100mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,52,Quinocip,"Ciprofloxacin 2mg/ml, 100ml",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,53,Cyfrox,Ciprofloxacin 500mG,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,54,Clariwell,"Clarithromycin 125mg, 5ml 50ml suspension",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,55,Claritrol,Clarithromycin 500mG tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,56,Clindagold,Clindamycin 300mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,57,Dalacin C,"Clindamycin 75mg / 5ml, 60ml",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,58,Clozol,"Clotrimazole 10mg/grams, 20g cream",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,59,Natravox,"Co-Amoxiclav 200mg : 28.5mg / 5ml, 70ml",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,60,Asiclav,Co-amoxiclav 625mg tab,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,63,Pradaxa,Dabigatran 110mG Capsule,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,64,Pradaxa,Dabigatran 150mG Capsule,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,65,Forxiga,Dapagliflozin 10mg Film-coated tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,66,Dixin,Digoxin 250mcg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,67,Diphenpors,Diphenhydramine 50mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,68,Dothix,Doxycycline 100mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,69,Duphaston,Dydrogesterone 10mG tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,70,Renite XI,Enalapril 5mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,71,Epotine,"Enoxaparin Sodium 100mg / ml, 0.4 ml pre-filled syringe",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,72,Myonal,Eperisone 50mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,73,Epotine,Epoetin Alfa (Recombinant Human Erythropoetin) 4000 IU/0.4mL Solution for Injection Pre-Filled Syringe,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,74,Optryl,Erythromycin 5mG/g Tube Eye Ointment,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,75,Escivex,Escitalopram (as Oxalate) 10mG tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,76,Fenosaph,Fenofibrate 200mg,EUROCARE TRADING CORPORATION,Competitive Bidding,Fredun Pharmaceuticals limited,review,generic weak match (100% of 1)
+25010001,77,Ferolem,Ferrous Sulfate 60mg elemental iron + Folic Acid 400mcg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,78,Saphteride,Finasteride 5mG tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,79,Fluoxidin,Fluoxetine 20mG capsule,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,80,Kovent,Fluticasone 125mcG + Salmeterol 25mcG + 120 doses,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,81,Kovent,Fluticasone 250mcG + Salmeterol 25mcG x 120doses MDI,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,82,Infacare,Folic Acid 5mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,83,Gabix,Gabapentin 100mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,84,Gabix,Gabapentin 300mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,85,Melanov,Gliclazide 30mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,86,Melanov,Gliclazide 80mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,87,Nuparin,"Heparin (as sodium) 1000IU / ml, 5ml",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,88,Qortisol,Hydrocortisone Sodium Succinate 100mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,89,Generic,Hyoscine 10mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,90,Ilube,Hypromellose 0.3% 10ml Opthalmic Solution,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,91,Penfro,"Ibuprofen 200mg/5ml, 60ml suspension",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,92,IGIV,"Immunoglobulin Normal, Human (IGIV) 50mG/mL, 50mL Vial",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,93,Glaritus,"Insulin, Glargine 100IU/mL, 3mL Pre-filled Pen",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,94,Nitrofix,Isosorbide Mononitrate 30mG,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,95,Nitrofix,Isosorbide Mononitrate 60mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,96,Isoprine,Isoxsuprine HCl 10mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,97,Masolev,"Levetiracetam 100mG/mL, 5mL vial",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,98,Levetrex,Levetiracetam 500mg tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,99,Levaxa,Levofloxacin 500mG tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,100,Levaxa,"Levofloxacin 5mg / ml, 100ml",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,101,Iflox,"Levofloxacin 5mG/mL, 5mL Eye Drops",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,102,Eurolev,Levothyroxine 150mcG tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,103,Eurolev,Levothyroxine 50mcG tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,104,Lorarex,Loratadine 10mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,106,Ritemed,Losartan 50mg+Hydrochlorothiazide 12.5mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,107,Ritemed,Metformin 500mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,108,Prolol,Metoprolol 50mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,109,Micotran,Miconazole 1.2g vaginal suppository,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,110,Leukorex,Montelukast 10mg chewable,EUROCARE TRADING CORPORATION,Competitive Bidding,"Life Square Laboratories, Inc.",review,generic weak match (100% of 1)
+25010001,111,Moxidin,"Moxifloxacin 5mg/ml, 5ml eye drops",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,112,Multilem,Multivitamins 500mG,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,113,Microscot,"Mupirocin Ointment 20mG/Gram, 15Grams Ointment",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,114,Aceflo,Neomycin+Polymyxin B+Floucinolone Acetonide Ear drops,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,115,Harfurin,Nitrofurantoin 100mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,116,Oflobiz,"Ofloxacin 3mg/ml, 5ml Otic Solution",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,117,Generic,Olanzapine 10mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,118,Accetron,"Ondansetron 2mg/ml, 2ml amp",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,119,Accetron,"Ondansetron 2mg/ml, 4ml",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,120,Generic,Oxacillin 500mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,123,Biophen,Penicillin G Benzathine 1.2M Modified Release powder for injection vial,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,124,Sumapen,Phenoxymethyl-Penicillin 500mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,125,Philtam,Piperacillin 4grams + tazobactam 500mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,126,K-lyte,Potassium Citrate 10mEq tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,127,Betadine,Povidone Iodine 1% 60ml oral antiseptic,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,128,Lefesone,"Prednisone 10mg/5ml, 60ml bottle oral",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,129,Vonwelt,Prednisone 20mg,EUROCARE TRADING CORPORATION,Competitive Bidding,"Lloyd Laboratories, Inc.",review,generic weak match (100% of 1)
+25010001,130,Alcon,"Proxymetacaine as (HCL) 0.5%, 15ml",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,131,Serotia,Quetiapine (as Fumarate) 100mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,132,Serotia,Quetiapine (as Fumarate) 25mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,133,Zentek,"Ranitidine 25mg/ml, 2ml IM IV",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,134,Scillin,"Regular Insulin, Recombinant DNA human 100 IU/MI 10ml",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,135,Desrem,Remdesivir 100mG Lyophilized powder,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,136,Desrem,Remdesivir 100mG Lyophilized powder,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,137,Generic,Risperidone 2mG tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,138,Xarelto,Rivaroxaban 15mG Film Coated Tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,139,Xarelto,Rivaroxaban 20mG Film Coated Tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,140,Hivent,"Salbutamol 1mg/ml, 2.5ml",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,141,Butamol,"Salbutamol 2mg/5ml, 60ml",EUROCARE TRADING CORPORATION,Competitive Bidding,"Novagen Pharmaceutical Co., Inc.",review,generic weak match (100% of 1)
+25010001,142,Renvela,Sevelamer 800mG Tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,143,Zimvast,Simvastatin 20mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,144,Generic,Sodium Bicarbonate 650mg,EUROCARE TRADING CORPORATION,Competitive Bidding,"Azariaz Pharmacuetical Laboratories, Inc.",review,generic weak match (100% of 1)
+25010001,145,Generic,"Sodium Chloride 2.5mEq / ml, 20ml",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,146,Spirophil,Spironolactone 25mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,147,Emb,Sterile Water for Injection 50ml Bottle,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,148,Iselpin,Sucralfate 1gram,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,149,Generic,Tamoxifen 20mG tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,150,Generic,Tamsulosin 200mcg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,151,Generic,Tamsulosin 400mcG,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,152,Ritemed,Telmisartan 40mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,153,Generic,Telmisartan 40mg + Hydrochlorthiazide 12.5mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,154,Generic,Telmisartan 80mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,155,Tobrason,Tobramycin + Dexamethasone  5ml eye drops,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,156,Generic,"Tobramycin 0.3% + Dexamethasone 0.1%, 3.5g eye ointment",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,157,Topvex,Topiramate 50mg Tablet,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,158,Saphtram,Tramadol 50mg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,159,Depakene,"Valproic 250mg / 5ml, 120ml syrup",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,160,Ramavit,"Vitamin B Complex (B1 B6 B12) 100mg + 100mg + 1mg, 3ml",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25010001,161,Ritemed,Vitamin B1 + Vitamin B12 + Vitamin B6 100mg + 5mg + 50mcg,EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25020022,3,Flummicil,Acetylcystein 600mg effervescent,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,4,,,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,5,Zilgam,"Aluminum Hydroxide+Magnesium Hydroxide, 200mG+100mG Tablet Oral",EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,6,Betamox,Amoxicillin 500mg,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,8,Aspilet,Aspirin 80mg,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,10,Amzipro,Azithromycin 500mg tab,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,11,Respi-saph,"Budenoside 250mcg/ml, 2ml RS",EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,13,Karvidol,Carvedilol 6.25 mg,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,15,Cimex,"Cefuroxime 125mG/5mL, 70ml",EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,17,Aerox,Cefuroxime 500mG Tablet,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,19,Ceticit,Cetirizine 10mg,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,21,Cyfrox,Ciprofloxacin 500mG,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,23,Clintop,Clindamycin 300mg,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,24,Generic,Cloxacillin 500mg,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,25,Natravox,"Co-amoxiclav 200mg : 28mg/5ml, 70ml",EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,26,Raniclav,Co-Amoxiclav 500mG:125mG Tablet,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,27,Myonal,Eperisone 50mg,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,32,Zebet,Gliclazide 80mg,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,33,Nuparin,"Heparin (as sodium) 1000IU/ml, 5ml",EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,34,Qortisol,Hydrocortisone 100mg powder IV,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,35,Hyosaph,Hyoscine n-Butyl Bromide 10mG Tablet,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,36,Hivent,"Ipratopium + Salbutamol 500mcG+2.5mG,2.5mL",EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,38,Nitrofix,Isosorbide Mononitrate 30mG Tab,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,39,Ketopane,"Ketorolac 30mG/ml, 1ml",EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,40,Ritemed,Losartan 100mg,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,41,Ritemed,Losartan 50mG+Hydrochlorothiazide 12.5mG Tablet,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,42,Ritemed,Mefenamic Acid 500mg,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,43,Ritemed,Metformin HCl 500mG Tablet,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,44,Meto,"Metoclopramide 5mG/mL, 2mL Injection",EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,45,Prometin,Metoprolol 50mg,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,46,Accebact,"Mupirocin 2% Ointment, 20mG/G, 5grams Tube",EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,48,Feverbless,"Paracetamol 150mG/mL, 2mL Injection",EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,51,Electab,Potassium Citrate 10mEq tablet,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,52,Betadine,Povidone Iodine 1% 60mL Oral Antiseptic,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,53,Ptu,Propylthiouracil 50mg,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,54,Rispesaph,Risperidone 2mg,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,56,Sambong Forte,Sambong 500mG tablet,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,57,Bettam,Tamsulosin 400mcg,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,60,Terazidine,Trimetazidine 35mG,EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25020022,61,Ritemed,"Vitamin B1 B6 B12, 100mG/5mG/50mcG, Tablet",EUROCARE TRADING CORPORATION,C.Bidding,,blank,insufficient data
+25030079,8,Xyclovirax,Aciclovir 200mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,9,Xyclovirax,Aciclovir 800mG tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,11,Kabiven,All in one Admixtures 1400 kcal. Variable content; peripheral line (Fat Emulsion + Amino Acids with Electrolytes + Glucose) 1920mL,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,12,Urisol,Allopurinol 100mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,13,Alluprex,Allopurinol 300mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,14,Monnax,"Aluminum Hydroxide 225mG + Magnesium Hydroxide 200mG per 5mL, 120mL Bottle",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,15,Cocine,"Amikacin 125 mg/mL, 2 mL Solution for Injection Ampule",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,16,Aminosterol,"Amino Acids, Crystalline Standard 6%, 100ml solution for injection",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,17,Aminosol,"Aminophylline 25mg/ml, 10ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,18,Ritemed,Amlodipine Besilate 10mG Tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,19,Ritemed,Amlodipine Besilate 5mG Tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,20,Ritemed,"Amoxicillin 250mg/5ml, 60ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,21,Gocillin,Ampicillin 1 gram vial,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,22,Miasyn,Ampicillin 1g + Sulbactam 500mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,23,Ampisaph-250,"Ampicillin 250mg (IM, IV)",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,24,Ampisaph,Ampicillin 500mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,25,Pixab,Apixaban 2.5mG Film-Coated Tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,26,Pixab,apixaban 5mG Film-Coated Tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,27,Arpivex,Aripiprazole 10mg tab,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,30,Ritemed,Ascorbic Acid 500mg,JOLLYMED ENTERPRISES,Competitive Bidding,"Huazhong Pharmaceutical Co., Ltd.",review,generic weak match (100% of 1)
+25030079,31,Ritemed,Atorvastatin 10mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,32,Ritemed,Atorvastatin 40mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,33,Ritemed,Atorvastatin 80mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,34,Zikant,"Azithromycin 200mg / 5ml, 15ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,35,Azithrx,Azithromycin 500mg vial,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,36,Survanta,"Beractant 25mg/ml, 4ml depot powder for injection",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,37,Betzine,Betahistine 16mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,38,Betzine,Betahistine HCl 24mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,39,Insuget,"Biphasic Isophane Human Insulin 70/30 (Recombinant DNA) 100IU/ml, 10ml vial",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,40,Dulxative,Bisacodyl 10mg suppository,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,41,Dylax,Bisacodyl 5mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,42,Dulxative,Bisacodyl 5mg suppository,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,43,Symbicort,"Budesonide/Formoterol Fumarate Dihydrate 160mcg/ 4.5mcg/ dose, 120 doses (Rapihaler)",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,44,Symbicort,"Budesonide/Formeterol Fumarate Dihydrate 160mcg/ 4.5mcg/ dose, 60 doses (Turbuhaler)",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,45,Sensorcaine,"Bupivacaine HCl 5mg/ml sol. for spinal injection (0.5% heavy), 4ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,46,Sinecod,Butamirate Citrate 50mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,53,Captor,captopril 25mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,54,Diamazepine,Carbamazepine 200mG tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,55,Duratocin,"Carbetocin 100mcG / ml, 1ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,57,Karvidol,Carvedilol 25mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,59,Phizolin,Cefazolin 1g,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,60,Cefixsaph,"Cefixime 100mg/5ml, 60ml suspension",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,61,Tocef,"Cefixime 20mg/ml, 10ml oral drops",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,62,,"Cefoxitin 1gram ""Sanoxin",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,63,Zeftacare,Ceftazidime 1gram,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,64,Sitixon,Ceftriaxone 1gram+10ml diluent,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,65,Eroxime,Cefuroxime 750mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,68,Rizine,Cinnarizine 25mG,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,69,Acipro,"Ciprofloxacin 2mg/ml, 100ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,70,Clarithol,Clarithromycin 500mG tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,71,Euromycin,"Clindamycin 150mG/mL, 4mL",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,72,Generic,"Clindamycin 75mg / 5ml, 60ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,74,Catapres,Clonidine 75mcG Tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,75,Ritemed,Clopidogrel 75mG,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,76,Clotizole,"Clotrimazole 10mG/Gram, 10Grams cream",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,77,Myreclox,"Cloxacillin 250mG/5mL suspension, 60mL",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,79,Goutsaph,Colchicine 500mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,87,Dexamak,"Dexamethasone 4mg/ml, 2ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,88,Valium,Diazepam 5mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,89,Valium,"Diazepam 5mg/ml, 2ml IM IV injectable",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,90,Diaciel,"Dicycloverine 10mg/5ml, 60ml syrup",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,91,Dixin,Digoxin 250mcg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,92,Dixil,"Digoxin 50mcg/mL,60ml oral elixir",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,93,Zemdil,Diltiazem 60mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,94,Histamox,"Diphenhydramine 12.5mg/5ml syrup, 60ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,96,Alleright,"Diphenhydramine HCL 50mg/ml, 1ml ampule",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,97,Motilium,Domperidone 10mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,99,Vexdim-10,Donepezil 10mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,100,Doxysaph,Doxycycline 100mG capsule,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,101,Duphaston,Dydrogesterone 10mG tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,102,Ritemed,Enalapril 5mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,103,Clexane,"Enoxaparin Sodium 100mg / ml, 0.4 ml pre-filled syringe",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,104,Epibbas,"Epinephrine 1mg / ml, 1ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,106,Perkustat,Erythromycin 500mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,107,Escinal,Escitalopram (as Oxalate) 10mG tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,108,Sublimaze,"Fentanyl Citrate 50mcg/ml, 2mL Ampule",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,110,Generic,"Fluconazole 2mg/ml, 100ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,111,Aplosyn,"Fluocinolone Acetonide 0.025% + Neomycin 3.5mG + Polymyxin B 100,00 Units/mL, 5mL Ear Drops",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,112,Prodin,Fluoxetine 20mG capsule,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,113,Salmeflo,Fluticasone 125mcG + Salmeterol 25mcG + 120 doses,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,114,Salmeflo,Fluticasone 250mcG + Salmeterol 25mcG x 120doses MDI,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,116,Lazicare,"Furosemide 10mg / ml, 2ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,117,Generic,Furosemide 20mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,118,Uromid,Furosemide 40mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,120,Gabix,Gabapentin 100mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,121,Gabix,Gabapentin 300mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,123,Zuredel,Haloperidol 5mg Tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,125,Diuzid,Hydrochlorthiazide 25mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,126,Hovicor,"Hydrocortisone 10mG/Gram, 10 Grams Cream",JOLLYMED ENTERPRISES,Competitive Bidding,"Interphil Laboratories, Inc.",review,generic weak match (100% of 1)
+25030079,127,Stericort,Hydrocortisone 250mg powder IV injection,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,129,Hyosaph,"Hyoscine n-Butyl Bromide, 20mG/mL, 1mL Ampule",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,130,Equisine-Moist,Hypromellose 0.3% 10ml Ophthalmic Solution,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,131,Penfro,"Ibuprofen 200mg/5ml, 60ml suspension",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,132,Humuglob,"Immunoglobulin Normal, Human (IGIV) 50mG/mL, 50mL Vial",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,133,Lantus,"Insulin, Glargine 100IU/mL, 3mL Pre-filled Pen",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,134,Humulin-n,"Isophane Insulin Human (Recombinant DNA) 100IU/ml, 10ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,137,Isolyte,Isosorbide Mononitrate 60mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,138,Duvadilan,Isoxsuprine HCl 10mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,139,Isoxulate,"Isoxsuprine HCl 5mg/ml, 2ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,140,Funginil-k,"Ketoconazole 20mg/gram, 15g cream",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,141,Acce-lac,"Lactulose 3.35g/5ml, 120ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,142,Lavida,Levedopa 100mg + Carbidopa 25mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,143,Keppra,Levetiracetam 500mg tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,144,Levox,Levofloxacin 500mG tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,145,Levox,"Levofloxacin 5mg / ml, 100ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,146,Euthyrox,Levothyroxine 100mcg tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,147,Eurolev,Levothyroxine 150mcG,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,150,Eurocaine,Lidocaine 2% 5ml polyampule,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,151,Loratamed,Loratadine 10mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,152,Ritemed,Losartan 50mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,155,Solumedrol,Methylprednisolone 1gram powder vial + 16mL Diluent,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,156,Meto,Metoclopramide 10mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,157,Prometin,Metoprolol 100mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,158,Ritemed,Metronidazole 500mG tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,159,Erzol,"Metronidazole 5mg/ml, 100ml Solution for Injection Vial",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,160,Daktarin,Miconazole 1.2g vaginal suppository,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,161,Daktarin,"Miconazole 20mg/G, 3.5g oral gel",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,162,Dormicum,"Midazolam 5mg / ml, 1ml ampule",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,163,Fleet Enema,"Monobasic/Dibasic Sodium Phosphate, 133mL Bottle",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,164,Novakast,Montelukast 10mg chewable,JOLLYMED ENTERPRISES,Competitive Bidding,"Life Square Laboratories, Inc.",review,generic weak match (100% of 1)
+25030079,165,Novakast,Montelukast 4mg chewable,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,166,Novakast,Montelukast 5mg chewable,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,167,Generic,Morphine 10mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,168,Myrevit,Multivitamin 15ml Oral Drops,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,169,Myrevit,Multivitamin 60ml syrup,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,171,Nubaine,"Nalbuphine 10mg/ml, 1ml IV",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,173,Generic,"Neostigmine 500mcG/mL, 1mL Ampule",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,174,Cardez,"Nicardipine 1mg/ml, 10ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,175,Macrodantin,Nitrofurantoin 100mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,178,Exzapine,Olanzapine 10mG Orodispersible Tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,179,Ranzole,Omeprazole 40mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,180,Omefree,Omeprazole 40mg vial + 10ml diluent,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,181,Asetron,"Ondansetron 2mg/ml, 4ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,182,Ambilyte,ORS-75 replacement 20.5g,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,183,Oxan,Oxacillin 500mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,186,Parasaph-inf,"Paracetamol 10mG/mL, 100mL Bottle",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,187,Paragesic,Paracetamol 125mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,189,Paragesic,Paracetamol 250mg suppository,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,191,Benzathine,Penicillin G Benzathine 1.2M Modified Release powder for injection vial,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,193,Sriphen,Phenytoin 100mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,194,Fentin,"Phenytoin 50mg/ml, 2ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,196,Tazobet,Piperacillin 4grams + tazobactam 500mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,198,Kaligen,Potassium Chloride 750mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,199,Betpred,"Prednisone 10mg/5ml, 60ml bottle oral",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,201,Derpson,Prednisone 5mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,202,Vonwelt,Propanolol 10mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,204,Diprivan,"Propofol 10mg/ml, 20ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,206,Quetiapro,Quetiapine (as Fumarate) 25mG tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,207,Quetiapro,Quetiapine (as Fumarate)100mG tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,208,Raniphil,Ranitidine 150mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,209,Humulin-r,"Regular Insulin, Recombinant DNA human 100 IU/MI 10ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,210,Gocunium,"Rocuronium 10mg/ml, 5ml IV injection",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,212,Ritemed,Rosuvastatin 20mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,213,Bronchosar,"Salbutamol 100 mcg/dose, 200 actuations Metered Dose Inhaler",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,214,Butamol,"Salbutamol 2mg/5ml, 60ml",JOLLYMED ENTERPRISES,Competitive Bidding,"Novagen Pharmaceutical Co., Inc.",review,generic weak match (100% of 1)
+25030079,216,Ritemed,Simvastatin 20mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,217,Solunate,"Sodium Bicarbonate 1mEq/ml, 50ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,218,Bicarnate,Sodium Bicarbonate 650mg,JOLLYMED ENTERPRISES,Competitive Bidding,"Azariaz Pharmacuetical Laboratories, Inc.",review,generic weak match (100% of 1)
+25030079,219,Aldactone,Spironolactone 25mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,221,Iselpin,Sucralfate 1gram,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,222,Anektil,"Suxamethonium Chloride 20mg/ml, 10ml IV",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,225,Ritemed,Telmisartan 40mg + Hydrochlorthiazide 12.5mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,226,Ritemed,Telmisartan 80mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,228,Abhaty-Tox,"Tetanus Toxoid, 40.00IU, 0.5ml ampule injection",JOLLYMED ENTERPRISES,Competitive Bidding,Human Biological Institute,review,generic weak match (100% of 1)
+25030079,229,Topamax,Topiramate 50mg Tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,230,Pengesic,Tramadol 50mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,231,Ambidol,"Tramadol 50mg/ml, 2ml IM IV SC",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,232,Trance,"Tranexamic Acid 100mg/ml, 5ml IM IV",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,237,Coumadin,Warfarin 2.5mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,238,Immunosaph,Zinc (equiv. to 20mg elemental zinc/5ml) 60ml,JOLLYMED ENTERPRISES,Competitive Bidding,"Diamon Laboratories, Inc",review,generic weak match (100% of 1)
+25030079,239,Generic,Zinc 10mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25030079,240,Zinbee,"Zinc 10mg/ml, 15ml drops",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,12,Urisol,Allopurinol 100mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,13,Alluprex,Allopurinol 300mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,20,Ritemed,"Amoxicillin 250mg/5ml, 60ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,26,Pixab,Apixaban 5mG Film-Coated Tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,31,Ritemed,Atorvastatin 10mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,32,Ritemed,Atorvastatin 40mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,37,Betzine,Betahistine 16mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,38,Betzine,Betahistine HCl 24mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,41,Dylax,Bisacodyl 5mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,43,Symbicort,"Budesonide/Formeterol Fumarate Dihydrate 160mcg/ 4.5mcg/ dose, 120 doses (Rapihaler)",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,44,Symbicort,"Budesonide/Formeterol Fumarate Dihydrate 160mcg/ 4.5mcg/ dose, 60 doses (Turbuhaler)",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,45,Sensorcaine,"Bupivacaine HCl 5mg/ml sol. for spinal injection (0.5% heavy), 4ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,79,Goutsaph,Colchicine 500mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,91,Dixin,Digoxin 250mcg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,95,Histamox,Diphenhydramine 50mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,96,Alleright,"Diphenhydramine HCL 50mg/ml, 1ml ampule",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,100,Doxysaph,Doxycycline 100mG capsule,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,111,Aplosyn,"Fluocinolone Acetonide 0.025% + Neomycin 3.5mG + Polymyxin B 100,00 Units/mL, 5mL Ear Drops",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,118,Uromid,Furosemide 40mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,119,Woncare,"Fusidate Sodium/Fusidic Acid 2%, 5 g Cream",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,120,Gabix,Gabapentin 100mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,121,Gabix,Gabapentin 300mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,124,Haldol,"Haloperidol 5mG/mL, 1mL Ampule",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,125,Diuzid,Hydrochlorthiazide 25mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,130,Equisine-Moist,Hypromellose 0.3% 10ml Ophthalmic Solution,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,131,Penfro,"Ibuprofen 200mg/5ml, 60ml suspension",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,132,Humuglob,"Immunoglobulin Normal, Human (IGIV) 50mG/mL, 50mL Vial",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,138,Duvadilan,Isoxsuprine HCl 10mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,139,Isoxulate,"Isoxsuprine HCl 5mg/ml, 2ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,146,Euthyrox,Levothyroxine 100mcg tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,147,Eurolev,Levothyroxine 150mcG,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,148,Eurolev,Levothyroxine 50mcG,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,149,Xylocaine,Lidocaine 10% 50ml,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,150,Eurocaine,Lidocaine 2% 5ml polyampule,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,151,Loratamed,Loratadine 10mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,152,Ritemed,Losartan 50mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,154,Methyden,Methylprednisolone 16mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,163,Fleet Enema,"Monobasic/Dibasic Sodium Phosphate, 133mL Bottle",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,166,Novakast,Montelukast 5mg chewable,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,169,Myrevit,Multivitamin 60ml syrup,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,174,Cardez,"Nicardipine 1mg/ml, 10ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,177,Oflobiz,"Ofloxacin 3mg/ml, 5ml Optic Solution",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,180,Omefree,Omeprazole 40mg vial + 10ml diluent,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,187,Paragesic,Paracetamol 125mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,188,Novamol,"Paracetamol 125mg/5ml, 60ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,189,Paragesic,Paracetamol 250mg suppository,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,190,Biophen,Penicillin G 1000000 IU IM IV,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,194,Fentin,"Phenytoin 50mg/ml, 2ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,200,Cort,Prednisone 20mg,JOLLYMED ENTERPRISES,Competitive Bidding,"Lloyd Laboratories, Inc.",review,generic weak match (100% of 1)
+25060160,203,Oranol,Propanolol 40mG Tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,210,Gocunium,"Rocuronium 10mg/ml, 5ml IV injection",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,211,Ritemed,Rosuvastatin 10mg tab,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,212,Ritemed,Rosuvastatin 20mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,216,Ritemed,Simvastatin 20mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,219,Aldactone,Spironolactone 25mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,225,Ritemed,Telmisartan 40mg + Hydrochlorthiazide 12.5mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,230,Pengesic,Tramadol 50mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,232,Trance,"Tranexamic Acid 100mg/ml, 5ml IM IV",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,234,Ursokon,Ursodeoxycholic 250mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,235,Depakene,"Valproic 250mg / 5ml, 120ml syrup",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25060160,239,Generic,Zinc 10mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070185,36,Hivent,"Ipratopium + Salbutamol 500mcG+2.5mG,2.5mL",EUROCARE TRADING CORPORATION,Competitive Bidding,,blank,insufficient data
+25070186,37,Betzine,Betahistine 16mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,39,Insuget,"Biphasic Isophane Human Insulin 70/30 (Recombinant DNA) 100IU/ml, 10ml vial",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,88,Valium,Diazepam 5mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,90,Diaciel,"Dicycloverine 10mg/5ml, 60ml syrup",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,93,Zemdil,Diltiazem 60mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,95,Histamox,Diphenhydramine 50mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,102,Ritemed,Enalapril 5mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,103,Clexane,"Enoxaparin Sodium 100mg / ml, 0.4 ml pre-filled syringe",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,108,Sublimaze,"Fentanyl Citrate 50mcg/ml, 2mL Ampule",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,118,Uromid,Furosemide 40mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,121,Gabix,Gabapentin 300mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,135,Sorbance,Isosorbide Dinitrate 10mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,136,Isordil,Isosorbide Dinitrate 5mG SL Tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,152,Ritemed,Losartan 50mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,157,Prometin,Metoprolol 100mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,166,Novakast,Montelukast 5mg chewable,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,170,Mupiderm,"Mupirocin 2% cream, 5gram",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,179,Ranzole,Omeprazole 40mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,189,Paragesic,Paracetamol 250mg suppository,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,203,Oranol,Propanolol 40mG Tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,210,Gocunium,"Rocuronium 10mg/ml, 5ml IV injection",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,211,Ritemed,Rosuvastatin 10mg tab,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,212,Ritemed,Rosuvastatin 20mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,216,Ritemed,Simvastatin 20mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,219,Aldactone,Spironolactone 25mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,232,Trance,"Tranexamic Acid 100mg/ml, 5ml IM IV",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,235,Depakene,"Valproic 250mg / 5ml, 120ml syrup",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,236,Combenerv,"Vitamin B Complex (B1 B6 B12) 100mg + 100mg + 1mg, 3ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070186,237,Coumadin,Warfarin 2.5mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,5,Fluimucil,Acetylcysteine 100mG,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,6,Fluimucil,"Acetylcysteine 100mG/mL, 3mL Solution for Inhalation",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,7,Fluimucil,"Acetylcysteine 200mg/ml, 25ml solution for injection",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,10,Albunorm,"Albumin, Human 20%, 50ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,28,Ritemed,"Ascorbic Acid 100mg / 5ml, 60ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,29,Novacee,"Ascorbic Acid 100mg / ml, 15ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,48,J-Chemie,"Calamine 8%, 60ml lotion",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,73,Dermovate,"Clobetasol 0.05%, 5 g Cream Tube",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,84,Forxiga,Dapagliflozin 10mg Film-coated tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,105,Optryl,"Erythromycin 0.5%, 5g eye ointment",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,109,Saphteride,Finasteride 5mG tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,111,Aplosyn,"Fluocinolone Acetonide 0.025% + Neomycin 3.5mG + Polymyxin B 100,00 Units/mL, 5mL Ear Drops",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,115,Folidaze,Folic Acid 5mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,119,Woncare,"Fusidate Sodium/Fusidic Acid 2%, 5 g Cream",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,122,Glycinorm,Gliclazide 30mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,139,Isoxulate,"Isoxsuprine HCl 5mg/ml, 2ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,146,Euthyrox,Levothyroxine 100mcg tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,148,Eurolev,Levothyroxine 50mcG,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,177,Oflobiz,"Ofloxacin 3mg/ml, 5ml Optic Solution",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,195,Ambivit-K,"Phytomenadione 10mg/ml, 1ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,224,Sultam,Tamsulosin 200mcG orodispersable tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,227,Bricalin,"Terbutaline 500mcg/ml, 1ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,233,Haemorex,Tranexamic Acid 500mG capsule,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25070209,238,Immunosaph,Zinc (equiv. to 20mg elemental zinc/5ml) 60ml,JOLLYMED ENTERPRISES,Competitive Bidding,"Diamon Laboratories, Inc",review,generic weak match (100% of 1)
+25100270,20,Ritemed,"Amoxicillin 250mg/5ml, 60ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,24,Ampisaph,Ampicillin 500mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,44,Symbicort,"Budesonide/Formeterol Fumarate Dihydrate 160mcg/ 4.5mcg/ dose, 60 doses (Turbuhaler)",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,46,Sinecod,Butamirate Citrate 50mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,51,Generic,Calcium + Cholecalciferol (Vitamin D3) Equiv. to 600mg elemental calcium + 400IU Film Coated Tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,52,Celabin,Capecitabine 500mg,JOLLYMED ENTERPRISES,Competitive Bidding,Beta Drugs LTD.,review,generic weak match (100% of 1)
+25100270,54,Diamazepine,Carbamazepine 200mG tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,56,Evaprost,"Carboprost 250mcG/ml, 1ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,60,Cefixsaph,"Cefixime 100mg/5ml, 60ml suspension",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,67,Generic,Cilostazol 100mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,69,Acipro,"Ciprofloxacin 2mg/ml, 100ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,76,Clotizole,"Clotrimazole 10mG/Gram, 10Grams cream",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,77,Myreclox,"Cloxacillin 250mG/5mL suspension, 60mL",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,78,Generic,Clozapin 25mg Tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,84,Forxiga,Dapagliflozin 10mg Film-coated tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,86,Decilone-Forte,Dexamethasone 4mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,92,Dixil,"Digoxin 50mcg/mL,60ml oral elixir",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,102,Ritemed,Enalapril 5mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,110,Generic,"Fluconazole 2mg/ml, 100ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,114,Salmeflo,Fluticasone 250mcG + Salmeterol 25mcG x 120doses MDI,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,121,Gabix,Gabapentin 300mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,124,Haldol,"Haloperidol 5mG/mL, 1mL Ampule",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,142,Lavida,Levedopa 100mg + Carbidopa 25mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,144,Levox,Levofloxacin 500mG tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,175,Macrodantin,Nitrofurantoin 100mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,181,Asetron,"Ondansetron 2mg/ml, 4ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,186,Parasaph-inf,"Paracetamol 10mG/mL, 100mL Bottle",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,192,Rhea,Phenobarbital 60mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,195,Ambivit-K,"Phytomenadione 10mg/ml, 1ml",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,206,Quetiapro,Quetiapine (as Fumarate) 25mG tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,207,Quetiapro,Quetiapine (as Fumarate)100mG tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,210,Gocunium,"Rocuronium 10mg/ml, 5ml IV injection",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,215,Zolodin,Sertralin 50mg Tab,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,219,Aldactone,Spironolactone 25mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,223,Generic,Tamoxifen 20mG tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,229,Topamax,Topiramate 50mg Tablet,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,234,Ursokon,Ursodeoxycholic 250mg,JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25100270,240,Zinbee,"Zinc 10mg/ml, 15ml drops",JOLLYMED ENTERPRISES,Competitive Bidding,,blank,insufficient data
+25120344,50,Generic,Calcium + Cholecalciferol (Vitamin D3) Equiv. to 500mg elemental calcium + 400IU Film Coated Tablet,JOLLYMED ENTERPRISES,C.BIDDING,,blank,insufficient data
+25120344,88,Valium,Diazepam 5mg,JOLLYMED ENTERPRISES,C.BIDDING,,blank,insufficient data
+25120344,92,Dixil,"Digoxin 50mcg/mL,60ml oral elixir",JOLLYMED ENTERPRISES,C.BIDDING,,blank,insufficient data
+25120344,133,Lantus,"Insulin, Glargine 100IU/mL, 3mL Pre-filled Pen",JOLLYMED ENTERPRISES,C.BIDDING,,blank,insufficient data
+25120344,148,Eurolev,Levothyroxine 50mcG,JOLLYMED ENTERPRISES,C.BIDDING,,blank,insufficient data
+25120344,205,Generic,"Protamine sulfate 10mg/ml, 5ml amp",JOLLYMED ENTERPRISES,C.BIDDING,,blank,insufficient data
+25120344,219,Aldactone,Spironolactone 25mg,JOLLYMED ENTERPRISES,C.BIDDING,,blank,insufficient data
